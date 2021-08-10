@@ -1,0 +1,9 @@
+{
+  "name": "simplepolling",
+  "version": "1.0.0",
+  "description": "simple real time polling app",
+  "main": "index.js",
+  "repository": "https://github.com/xhuliodo/simplepolling.git",
+  "author": "Xhulio Doda",
+  "license": "MIT"
+}
