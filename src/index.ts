@@ -1,14 +1,3 @@
-// class Poll {
-//     constructor(id, question, answers){
-
-//     }
-//   create(){
-//     if (question.length<0){
-//         throw new Error("You cannot create a poll with an empty")
-//     }
-//   };
-// }
-
 // interface Deadline {
 //   id: number;
 //   pollId: number;
