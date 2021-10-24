@@ -11,10 +11,12 @@ export const typeOfErr = {
 export class CustomErr extends Error {
   name: string;
   message: string;
-  constructor(name: string, message: string, ...params) {
-    super(...params)
-    if (Error.captureStackTrace) {
+  constructor(name: string, message: string, stack?: string, ...params) {
+    super(...params);
+    if (stack) {
       Error.captureStackTrace(this, CustomErr);
+    } else {
+      this.stack = stack;
     }
     this.name = name;
     this.message = message;

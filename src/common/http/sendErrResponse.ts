@@ -1,8 +1,8 @@
 import { Response } from "express";
-import { typeOfErr } from "../errors/errors";
+import { CustomErr, typeOfErr } from "../errors/errors";
 import { ErrorResponse } from "../errors/errorsInterface";
 
-function sendErrResponse(error: Error, res: Response) {
+export const sendErrResponse = (error: CustomErr, res: Response) => {
   let err: ErrorResponse;
   switch (error.name) {
     case typeOfErr.db_connection:
@@ -42,4 +42,4 @@ function sendErrResponse(error: Error, res: Response) {
       res.send(err);
       break;
   }
-}
+};

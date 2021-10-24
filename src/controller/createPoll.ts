@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { TCreatePollService } from "../app/createPoll";
+import { sendErrResponse } from "../common/http/sendErrResponse";
 import { Poll } from "../domain/pollInterface";
 
 export const createPollControllerBuilder = (
@@ -10,12 +11,12 @@ export const createPollControllerBuilder = (
     const answers = req.body?.answers;
     const multipleChoice = req.body?.multipleChoice;
 
-    let newPoll: Poll;
-    try {
-      newPoll = await createPollService(question, answers, multipleChoice);
-      res.send(newPoll);
-    } catch (e) {
-      res.send({ error: e?.message });
+    const newPoll = await createPollService(question, answers, multipleChoice);
+    if (newPoll.ok) {
+      res.send({ poll: newPoll.data });
+    }
+    if (newPoll.ok === false) {
+      sendErrResponse(newPoll.error, res);
     }
   };
 };

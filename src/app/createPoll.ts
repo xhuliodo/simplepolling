@@ -26,16 +26,24 @@ export const createPollServiceBuilder = (
 
     if (newPoll.ok) {
       const savedPoll = await repo.save(newPoll.data);
-      if(savedPoll.ok){
+      
+      if (savedPoll.ok) {
         return { ok: true, data: savedPoll.data };
       }
-      return {ok:false, error: savedPoll?.error}
-      
+      if (savedPoll.ok === false) {
+        return { ok: false, error: savedPoll.error };
+      }
     }
 
-    return {
-      ok: false,
-      error: new CustomErr(typeOfErr.bad_request, newPoll),
-    };
+    if (newPoll.ok === false) {
+      return {
+        ok: false,
+        error: new CustomErr(
+          typeOfErr.bad_request,
+          newPoll.error.message,
+          newPoll.error.stack
+        ),
+      };
+    }
   };
 };
