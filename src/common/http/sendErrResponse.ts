@@ -7,39 +7,39 @@ export const sendErrResponse = (error: CustomErr, res: Response) => {
   switch (error.name) {
     case typeOfErr.db_connection:
       err = {
+        error: error.name,
         errorText:
           "Service cannot be accessed right now, please try again later",
-        statusCode: 503,
       };
-      res.send(err);
+      res.status(503).send(err);
       break;
     case typeOfErr.not_found:
       err = {
+        error: error.name,
         errorText: error.message,
-        statusCode: 404,
       };
-      res.send(err);
+      res.status(404).send(err);
       break;
     case typeOfErr.bad_request:
       err = {
+        error: error.name,
         errorText: error.message,
-        statusCode: 400,
       };
-      res.send(err);
+      res.status(400).send(err);
       break;
     case typeOfErr.forbidden:
       err = {
+        error: error.name,
         errorText: error.message,
-        statusCode: 403,
       };
-      res.send(err);
+      res.status(403).send(err);
       break;
     default:
       err = {
+        error: "unexpected_error",
         errorText: "Something went wrong",
-        statusCode: 500,
       };
-      res.send(err);
+      res.status(500).send(err);
       break;
   }
 };
