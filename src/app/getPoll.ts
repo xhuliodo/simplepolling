@@ -1,4 +1,4 @@
-import { CustomErr } from "../common/errors/errors";
+import { CustomErr, typeOfErr } from "../common/errors/errors";
 import { Result } from "../common/resultInterface";
 import { Poll } from "../domain/pollInterface";
 import { IPollRepo } from "../domain/pollRepo";
@@ -7,10 +7,24 @@ export type TGetPollService = (id: string) => Promise<Result<Poll>>;
 
 export const getPollServiceBuilder = (repo: IPollRepo): TGetPollService => {
   return async function getPollService(id: string) {
-    const foundPoll = await repo.getById(id);
-    if (foundPoll.ok) {
-      return { ok: true, data: foundPoll.data };
+    if (!id) {
+      return {
+        ok: false,
+        error: new CustomErr(typeOfErr.bad_request, "submit a valid ID"),
+      };
     }
-    return {ok:false, error: foundPoll}
+    const foundPoll = await repo.getById(id);
+
+    if (foundPoll.ok === false) {
+      return {
+        ok: false,
+        error: new CustomErr(
+          foundPoll.error.name,
+          foundPoll.error.message,
+          foundPoll.error.stack
+        ),
+      };
+    }
+    return { ok: true, data: foundPoll.data };
   };
 };

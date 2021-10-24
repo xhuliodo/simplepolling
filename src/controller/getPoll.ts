@@ -1,14 +1,15 @@
 import { Request, Response } from "express";
 import { TGetPollService } from "../app/getPoll";
+import { sendErrResponse } from "../common/http/sendErrResponse";
 
 export const getPollControllerBuilder = (getPollService: TGetPollService) => {
   return async function getPollController(req: Request, res: Response) {
     const id = req.params?.id;
-    if (!id) {
-      throw new Error("supply an id parameter");
-    }
 
     const foundPoll = await getPollService(id);
-    res.send(foundPoll);
+
+    foundPoll.ok === false
+      ? sendErrResponse(foundPoll.error, res)
+      : res.send(foundPoll);
   };
 };

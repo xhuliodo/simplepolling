@@ -24,17 +24,6 @@ export const createPollServiceBuilder = (
       multipleChoice
     );
 
-    if (newPoll.ok) {
-      const savedPoll = await repo.save(newPoll.data);
-      
-      if (savedPoll.ok) {
-        return { ok: true, data: savedPoll.data };
-      }
-      if (savedPoll.ok === false) {
-        return { ok: false, error: savedPoll.error };
-      }
-    }
-
     if (newPoll.ok === false) {
       return {
         ok: false,
@@ -45,5 +34,19 @@ export const createPollServiceBuilder = (
         ),
       };
     }
+
+    const savedPoll = await repo.save(newPoll.data);
+
+    if (savedPoll.ok === false) {
+      return {
+        ok: false,
+        error: new CustomErr(
+          typeOfErr.bad_request,
+          savedPoll.error.message,
+          savedPoll.error.stack
+        ),
+      };
+    }
+    return { ok: true, data: savedPoll.data };
   };
 };
