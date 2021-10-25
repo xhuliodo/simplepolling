@@ -9,6 +9,8 @@ const polls: Poll[] = [
     question: "ca do bojm",
     answers: ["do ham", "do pijm nje c"],
     multipleChoice: false,
+    hasDeadline: false,
+    closed: false,
   },
 ];
 

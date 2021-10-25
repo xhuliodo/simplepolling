@@ -5,7 +5,9 @@ import { BasePoll } from "./pollInterface";
 export const createBasePollDomainValidation = (
   question: string = "",
   answers: string[] = [],
-  multipleChoice: boolean = false
+  multipleChoice: boolean = false,
+  hasDeadline: boolean = false,
+  closeAferHours?: number
 ): Result<BasePoll> => {
   if (!question.length) {
     return {
@@ -25,6 +27,15 @@ export const createBasePollDomainValidation = (
       ),
     };
   }
+  if (answers.length > 10) {
+    return {
+      ok: false,
+      error: new CustomErr(
+        typeOfErr.bad_request,
+        "you cannot create a poll with more than 10 answers"
+      ),
+    };
+  }
   answers.forEach((a) => {
     if (!a.length) {
       return {
@@ -36,5 +47,17 @@ export const createBasePollDomainValidation = (
       };
     }
   });
-  return { ok: true, data: { question, answers, multipleChoice } };
+  if (hasDeadline && !closeAferHours) {
+    return {
+      ok: false,
+      error: new CustomErr(
+        typeOfErr.bad_request,
+        "if your poll has a deadline, provide after how many hours it finishes"
+      ),
+    };
+  }
+  return {
+    ok: true,
+    data: { question, answers, multipleChoice, hasDeadline, closed: false },
+  };
 };

@@ -10,6 +10,7 @@ import cors from "cors";
 import helmet from "helmet";
 import { inMemoryPollRepoImpl } from "./infrastructure/db/inMemoryRepo";
 import { createRoutes } from "./infrastructure/router/router";
+import { externalAPI } from "./infrastructure/externalApi/time";
 
 dotenv.config();
 
@@ -26,7 +27,8 @@ app.use(cors());
 app.use(express.json());
 
 const repo = inMemoryPollRepoImpl;
-createRoutes(app, repo);
+const externalAPIImpl = externalAPI
+createRoutes(app, repo, externalAPIImpl);
 
 try {
   app.listen(PORT, () => {
