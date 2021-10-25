@@ -13,12 +13,15 @@ const polls: Poll[] = [
 ];
 
 export const inMemoryPollRepoImpl: IPollRepo = {
-  save: (poll) => {
+  save: async (poll) => {
     const newId = uuid.v4();
     const newPoll = { id: newId, ...poll };
-    return { ok: true, data: newPoll };
+    const savedPoll: Promise<Poll> = new Promise((resolve, reject) =>
+      resolve(newPoll)
+    );
+    return { ok: true, data: await savedPoll };
   },
-  getById: (id) => {
+  getById: async (id) => {
     const foundPoll = polls.filter((p) => p.id === id);
     if (foundPoll[0]) {
       return { ok: true, data: foundPoll[0] };
