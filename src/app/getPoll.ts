@@ -1,5 +1,5 @@
 import { CustomErr, typeOfErr } from "../common/errors/errors";
-import { Result } from "../common/resultInterface";
+import { Result } from "../common/errors/resultInterface";
 import { Poll } from "../domain/pollInterface";
 import { IPollRepo } from "../domain/pollRepo";
 
@@ -14,7 +14,6 @@ export const getPollServiceBuilder = (repo: IPollRepo): TGetPollService => {
       };
     }
     const foundPoll = await repo.getById(id);
-
     if (foundPoll.ok === false) {
       return {
         ok: false,

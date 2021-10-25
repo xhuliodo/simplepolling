@@ -14,6 +14,6 @@ export const createPollControllerBuilder = (
 
     newPoll.ok === false
       ? sendErrResponse(newPoll.error, res)
-      : res.send({ poll: newPoll.data });
+      : res.send(newPoll.data);
   };
 };

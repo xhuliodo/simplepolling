@@ -1,5 +1,5 @@
 import { CustomErr, typeOfErr } from "../common/errors/errors";
-import { Result } from "../common/resultInterface";
+import { Result } from "../common/errors/resultInterface";
 import { createBasePollDomainValidation } from "../domain/poll";
 import { BasePoll, Poll } from "../domain/pollInterface";
 import { IPollRepo } from "../domain/pollRepo";

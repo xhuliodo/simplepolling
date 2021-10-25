@@ -1,5 +1,5 @@
 import { CustomErr, typeOfErr } from "../common/errors/errors";
-import { Result } from "../common/resultInterface";
+import { Result } from "../common/errors/resultInterface";
 import { BasePoll } from "./pollInterface";
 
 export const createBasePollDomainValidation = (

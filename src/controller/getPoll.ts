@@ -10,6 +10,6 @@ export const getPollControllerBuilder = (getPollService: TGetPollService) => {
 
     foundPoll.ok === false
       ? sendErrResponse(foundPoll.error, res)
-      : res.send(foundPoll);
+      : res.send(foundPoll.data);
   };
 };
