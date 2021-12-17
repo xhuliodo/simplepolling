@@ -1,29 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-12-17T12:49:40.001Z" agent="5.0 (Windows)" etag="cK5396507yC2tm7oWL-U" version="15.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-17T15:30:22.253Z" agent="5.0 (Windows)" etag="HFFL_Amv-FED1gfOy2vE" version="15.9.6" type="github">
   <diagram id="RRYNnmuwxw0bA15gHxmd" name="Page-1">
-    <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1730" dy="927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="5bDYOFOv6-argy16zRWM-1" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Architecture&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="395" y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-8" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Endpoints List&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;GET - /polls/:id&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;POST - /polls&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="74.59" y="70" width="110.83" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-9" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Endpoints List&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;POST - /vote&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="385" y="70" width="110.83" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-11" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Endpoints List&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;GET - /polls/:id/results&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="690" y="70" width="130" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-13" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Polls&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="74.59" y="120" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-14" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Results&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="690" y="120" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-15" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Vote&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="385" y="120" width="60" height="30" as="geometry" />
+        <mxCell id="5bDYOFOv6-argy16zRWM-13" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Polls/VoteValidation Microservice&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="100" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-23" value="&lt;font style=&quot;font-size: 12px&quot;&gt;GET - /polls/:id&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-16" target="5bDYOFOv6-argy16zRWM-17">
           <mxGeometry relative="1" as="geometry" />
@@ -36,25 +21,56 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-16" target="5bDYOFOv6-argy16zRWM-28">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="5bDYOFOv6-argy16zRWM-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-16" target="5bDYOFOv6-argy16zRWM-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="297" />
+              <mxPoint x="200" y="436" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-30" value="POST - /polls/:id/vote" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-29">
-          <mxGeometry x="0.0612" y="2" relative="1" as="geometry">
+        <mxCell id="5bDYOFOv6-argy16zRWM-50" value="POST - /polls/:id/vote" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-49">
+          <mxGeometry x="0.104" y="4" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-16" target="5bDYOFOv6-argy16zRWM-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="297" />
+              <mxPoint x="160" y="999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-57" value="GET - /polls/:id/results" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-56">
+          <mxGeometry x="-0.0228" y="-1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-16" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="30" y="250" width="76.5" height="93" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-17" value="&lt;font style=&quot;font-size: 12px&quot;&gt;getPoll&lt;/font&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="300" y="160" width="69" height="72" as="geometry" />
+          <mxGeometry x="456.33000000000004" y="160" width="69" height="72" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-21" value="getItem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-20" target="5bDYOFOv6-argy16zRWM-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-20" target="5bDYOFOv6-argy16zRWM-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="986.33" y="196" />
+              <mxPoint x="986.33" y="436" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-45" value="(1) getItem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-42">
+          <mxGeometry x="0.0305" y="-3" relative="1" as="geometry">
+            <mxPoint x="-3" y="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-20" value="Polls" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
-          <mxGeometry x="640" y="157" width="78" height="78" as="geometry" />
+          <mxGeometry x="1236.33" y="157" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-22" target="5bDYOFOv6-argy16zRWM-20">
           <mxGeometry relative="1" as="geometry" />
@@ -65,33 +81,64 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-22" value="&lt;font style=&quot;font-size: 12px&quot;&gt;postPoll&lt;/font&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="445" y="260.5" width="69" height="72" as="geometry" />
+          <mxGeometry x="596.33" y="260.5" width="69" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-41" value="sendMessage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-28" target="5bDYOFOv6-argy16zRWM-39">
+        <mxCell id="5bDYOFOv6-argy16zRWM-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-28" target="5bDYOFOv6-argy16zRWM-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-47" value="(2) getItem/ (3 [optional]) insertItem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-46">
+          <mxGeometry x="-0.389" y="-1" relative="1" as="geometry">
+            <mxPoint x="256" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-28" target="5bDYOFOv6-argy16zRWM-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-28" value="&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;validateVote&lt;/font&gt;&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="300" y="452.5" width="69" height="72" as="geometry" />
+          <mxGeometry x="596.33" y="400" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-33" target="5bDYOFOv6-argy16zRWM-53">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-33" value="&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;votePoll&lt;/font&gt;&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="300" y="620" width="69" height="72" as="geometry" />
+          <mxGeometry x="440" y="813" width="69" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-35" value="VotesDeduplication" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
-          <mxGeometry x="640" y="350" width="78" height="78" as="geometry" />
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-37" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-28" target="5bDYOFOv6-argy16zRWM-35">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="550" as="sourcePoint" />
-            <mxPoint x="440" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="5bDYOFOv6-argy16zRWM-38" value="getItem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-37">
-          <mxGeometry x="-0.1734" y="-1" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
-          </mxGeometry>
+        <mxCell id="5bDYOFOv6-argy16zRWM-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-39" target="5bDYOFOv6-argy16zRWM-33">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-39" value="votesQueue" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sqs;fillColor=#D9A741;gradientColor=none;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="640" y="504" width="76.5" height="93" as="geometry" />
+          <mxGeometry x="592.58" y="550" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-44" value="&lt;div&gt;VotesDeduplication&lt;/div&gt;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
+          <mxGeometry x="1236.33" y="396" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="5bDYOFOv6-argy16zRWM-53" target="5bDYOFOv6-argy16zRWM-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-61" value="insertItem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-60">
+          <mxGeometry x="-0.5744" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-62" value="getItem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="5bDYOFOv6-argy16zRWM-60">
+          <mxGeometry x="0.5292" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-53" value="Results" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
+          <mxGeometry x="750" y="810" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-55" value="&lt;font style=&quot;font-size: 12px&quot;&gt;getResults&lt;/font&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="300" y="963" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-63" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;strokeColor=#CCCC00;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="230" y="140" width="1130" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-66" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;strokeColor=#CCCC00;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="230" y="750" width="660" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="5bDYOFOv6-argy16zRWM-67" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Results Microservice&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="710" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
