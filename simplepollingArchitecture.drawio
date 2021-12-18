@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-12-17T15:30:22.253Z" agent="5.0 (Windows)" etag="HFFL_Amv-FED1gfOy2vE" version="15.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-18T20:12:42.942Z" agent="5.0 (Windows)" etag="Zgwh9pq0BqBdhldCeuyn" version="15.9.6" type="github">
   <diagram id="RRYNnmuwxw0bA15gHxmd" name="Page-1">
-    <mxGraphModel dx="1730" dy="927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2595" dy="1390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="5bDYOFOv6-argy16zRWM-1" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Architecture&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5bDYOFOv6-argy16zRWM-1" value="&lt;font style=&quot;font-size: 32px&quot;&gt;Architecture&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="395" y="20" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-13" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Polls/VoteValidation Microservice&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -132,7 +132,7 @@
           <mxGeometry x="300" y="963" width="69" height="72" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-63" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;strokeColor=#CCCC00;strokeWidth=5;" vertex="1" parent="1">
-          <mxGeometry x="230" y="140" width="1130" height="540" as="geometry" />
+          <mxGeometry x="238" y="140" width="1130" height="540" as="geometry" />
         </mxCell>
         <mxCell id="5bDYOFOv6-argy16zRWM-66" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;strokeColor=#CCCC00;strokeWidth=5;" vertex="1" parent="1">
           <mxGeometry x="230" y="750" width="660" height="360" as="geometry" />
